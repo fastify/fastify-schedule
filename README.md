@@ -4,7 +4,8 @@
 [![Build Status](https://github.com/fastify/fastify-schedule/workflows/ci/badge.svg)](https://github.com/fastify/fastify-schedule/actions)
 [![Coverage Status](https://coveralls.io/repos/fastify/fastify-schedule/badge.svg?branch=main)](https://coveralls.io/r/fastify/fastify-schedule?branch=main)
 
-Fastify plugin for scheduling periodic jobs. Provides an instance of [toad-scheduler](https://github.com/kibertoad/toad-scheduler) on fastify instance.
+Fastify plugin for scheduling periodic jobs. Provides an instance of [toad-scheduler](https://github.com/kibertoad/toad-scheduler) on fastify instance.  
+Jobs are stopped automatically when the fastify instance is stopped.
 
 ## Getting started
 
