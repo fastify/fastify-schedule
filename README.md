@@ -11,7 +11,7 @@ Fastify plugin for scheduling periodic jobs. Provides an instance of [toad-sched
 First install the package:
 
 ```bash
-npm i fastify-schedule
+npm i fastify-schedule toad-scheduler
 ```
 
 Next, set up the plugin:
