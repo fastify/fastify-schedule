@@ -1,7 +1,6 @@
 # fastify-schedule
 
 [![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
 [![Build Status](https://github.com/fastify/fastify-schedule/workflows/ci/badge.svg)](https://github.com/fastify/fastify-schedule/actions)
 [![Coverage Status](https://coveralls.io/repos/fastify/fastify-schedule/badge.svg?branch=main)](https://coveralls.io/r/fastify/fastify-schedule?branch=main)
 
