@@ -24,10 +24,10 @@ const fastify = require('fastify');
 fastify.register(fastifySchedulePlugin);
 ```
 
-From there jobs can be added to scheduler at any point until application is stopped:
+From there jobs can be added to scheduler at any point until the application is stopped:
 
 ```js
-const {  SimpleIntervalJob, AsyncTask } = require('toad-scheduler')
+const { SimpleIntervalJob, AsyncTask } = require('toad-scheduler')
 
 const task = new AsyncTask(
     'simple task',
@@ -39,7 +39,7 @@ const job = new SimpleIntervalJob({ seconds: 20, }, task)
 fastify.scheduler.addSimpleIntervalJob(job)
 ```
 
-For more detailed instructions see the [documentation](https://github.com/kibertoad/toad-scheduler) of `toad-scheduler`.
+For more detailed instructions, see the [documentation](https://github.com/kibertoad/toad-scheduler) of `toad-scheduler`.
 
 [npm-image]: https://img.shields.io/npm/v/fastify-schedule.svg
 [npm-url]: https://npmjs.org/package/fastify-schedule
