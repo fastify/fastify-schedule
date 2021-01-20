@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "fastify": "^3.0.0",
-    "toad-scheduler": "^1.0.1"
+    "toad-scheduler": "^1.0.2"
   },
   "devDependencies": {
     "@types/jest": "^26.0.20",
