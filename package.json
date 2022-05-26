@@ -1,6 +1,6 @@
 {
-  "name": "fastify-schedule",
-  "version": "1.0.0",
+  "name": "@fastify/schedule",
+  "version": "2.0.0",
   "description": "Fastify plugin for scheduling periodic jobs",
   "license": "MIT",
   "maintainers": [
@@ -66,5 +66,8 @@
     "lib/*",
     "index.js",
     "index.d.ts"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
