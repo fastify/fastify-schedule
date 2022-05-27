@@ -15,7 +15,7 @@
     "test": "jest --config=jest.config.json",
     "test:coverage": "jest --config=jest.config.json --coverage",
     "test:typescript": "tsd",
-    "lint": "eslint --format codeframe \"lib/**/*.js\" \"test/**/*.js\" index.js",
+    "lint": "eslint \"lib/**/*.js\" \"test/**/*.js\" index.js",
     "lint:everything": "npm run lint && npm run test:typescript",
     "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts",
     "postinstall": "husky install",
