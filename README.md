@@ -20,25 +20,24 @@ npm i fastify-schedule toad-scheduler
 Next, set up the plugin:
 
 ```js
-const { fastifySchedulePlugin } = require('fastify-schedule')
-const fastify = require('fastify');
-
-fastify.register(fastifySchedulePlugin);
-```
-
-From there jobs can be added to scheduler at any point until the application is stopped:
-
-```js
-const { SimpleIntervalJob, AsyncTask } = require('toad-scheduler')
+const fastify = require('fastify')();
+const { fastifySchedulePlugin } = require('fastify-schedule');
+const { SimpleIntervalJob, AsyncTask } = require('toad-scheduler');
 
 const task = new AsyncTask(
     'simple task',
     () => { return db.pollForSomeData().then((result) => { /* continue the promise chain */ }) },
-    (err: Error) => { /* handle errors here */ }
+    (err) => { /* handle errors here */ }
 )
 const job = new SimpleIntervalJob({ seconds: 20, }, task)
 
-fastify.scheduler.addSimpleIntervalJob(job)
+fastify.register(fastifySchedulePlugin);
+
+// `fastify.scheduler` becomes available after initialization.
+// Therefore, you need to call `ready` method.
+fastify.ready().then(() => {
+    fastify.scheduler.addSimpleIntervalJob(job)
+})
 ```
 
 For more detailed instructions, see the [documentation](https://github.com/kibertoad/toad-scheduler) of `toad-scheduler`.
