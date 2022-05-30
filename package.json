@@ -44,9 +44,6 @@
     "tsd": "^0.20.0",
     "typescript": "^4.1.3"
   },
-  "engines": {
-    "node": ">=10.16.0"
-  },
   "homepage": "http://github.com/fastify/fastify-schedule",
   "repository": {
     "type": "git",
