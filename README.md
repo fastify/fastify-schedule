@@ -2,7 +2,6 @@
 
 ![CI](https://github.com/fastify/fastify-schedule/workflows/CI/badge.svg)
 [![NPM Version][npm-image]][npm-url]
-[![Known Vulnerabilities](https://snyk.io/test/github/fastify/fastify-schedule/badge.svg)](https://snyk.io/test/github/fastify/fastify-schedule)
 [![Coverage Status](https://coveralls.io/repos/fastify/fastify-schedule/badge.svg?branch=main)](https://coveralls.io/r/fastify/fastify-schedule?branch=main)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
