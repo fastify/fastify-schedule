@@ -1,4 +1,4 @@
-# fastify-schedule
+# @fastify/schedule
 
 ![CI](https://github.com/fastify/fastify-schedule/workflows/CI/badge.svg)
 [![NPM Version][npm-image]][npm-url]
