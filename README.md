@@ -2,7 +2,6 @@
 
 ![CI](https://github.com/fastify/fastify-schedule/workflows/CI/badge.svg)
 [![NPM Version][npm-image]][npm-url]
-[![Known Vulnerabilities](https://snyk.io/test/github/fastify/fastify-schedule/badge.svg)](https://snyk.io/test/github/fastify/fastify-schedule)
 [![Coverage Status](https://coveralls.io/repos/fastify/fastify-schedule/badge.svg?branch=main)](https://coveralls.io/r/fastify/fastify-schedule?branch=main)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
@@ -14,14 +13,14 @@ Jobs are stopped automatically when the fastify instance is stopped.
 First install the package:
 
 ```bash
-npm i fastify-schedule toad-scheduler
+npm i @fastify/schedule toad-scheduler
 ```
 
 Next, set up the plugin:
 
 ```js
 const fastify = require('fastify')();
-const { fastifySchedulePlugin } = require('fastify-schedule');
+const { fastifySchedulePlugin } = require('@fastify/schedule');
 const { SimpleIntervalJob, AsyncTask } = require('toad-scheduler');
 
 const task = new AsyncTask(
@@ -42,5 +41,5 @@ fastify.ready().then(() => {
 
 For more detailed instructions, see the [documentation](https://github.com/kibertoad/toad-scheduler) of `toad-scheduler`.
 
-[npm-image]: https://img.shields.io/npm/v/fastify-schedule.svg
-[npm-url]: https://npmjs.org/package/fastify-schedule
+[npm-image]: https://img.shields.io/npm/v/@fastify/schedule.svg
+[npm-url]: https://npmjs.org/package/@fastify/schedule
