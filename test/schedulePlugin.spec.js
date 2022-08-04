@@ -4,7 +4,7 @@ const { SimpleIntervalJob, Task } = require("toad-scheduler");
 
 describe("schedulePlugin", () => {
   beforeEach(() => {
-    jest.useFakeTimers();
+    jest.useFakeTimers({ legacyFakeTimers: true });
   });
 
   afterEach(() => {
