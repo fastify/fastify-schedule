@@ -10,7 +10,7 @@
     }
   ],
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "jest --config=jest.config.json",
     "test:coverage": "jest --config=jest.config.json --coverage",
@@ -61,7 +61,7 @@
     "LICENSE",
     "lib/*",
     "index.js",
-    "index.d.ts"
+    "types/index.d.ts"
   ],
   "publishConfig": {
     "access": "public"
