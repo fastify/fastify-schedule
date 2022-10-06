@@ -1,7 +1,8 @@
 # @fastify/schedule
 
 ![CI](https://github.com/fastify/fastify-schedule/workflows/CI/badge.svg)
-[![NPM Version][npm-image]][npm-url]
+[![NPM version](https://img.shields.io/npm/v/@fastify/schedule.svg?style=flat)](https://www.npmjs.com/package/@fastify/schedule)
+[![NPM downloads](https://img.shields.io/npm/dm/@fastify/schedule.svg?style=flat)](https://www.npmjs.com/package/@fastify/schedule)
 [![Coverage Status](https://coveralls.io/repos/fastify/fastify-schedule/badge.svg?branch=main)](https://coveralls.io/r/fastify/fastify-schedule?branch=main)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
 
