@@ -41,6 +41,3 @@ fastify.ready().then(() => {
 ```
 
 For more detailed instructions, see the [documentation](https://github.com/kibertoad/toad-scheduler) of `toad-scheduler`.
-
-[npm-image]: https://img.shields.io/npm/v/@fastify/schedule.svg
-[npm-url]: https://npmjs.org/package/@fastify/schedule
