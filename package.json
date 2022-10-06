@@ -17,12 +17,10 @@
     "test:typescript": "tsd",
     "lint": "eslint \"test/**/*.js\" index.js",
     "lint:everything": "npm run lint && npm run test:typescript",
-    "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts",
-    "postinstall": "husky install",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts"
   },
   "dependencies": {
+    "@fastify/pre-commit": "^2.0.2",
     "fastify-plugin": "^4.0.0"
   },
   "peerDependencies": {
@@ -36,8 +34,6 @@
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "fastify": "^4.0.0-rc.3",
-    "husky": "^8.0.0",
-    "pinst": "^3.0.0",
     "prettier": "^2.2.1",
     "tap": "^16.3.0",
     "toad-scheduler": "^1.0.2",
@@ -65,5 +61,9 @@
   ],
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ]
 }
