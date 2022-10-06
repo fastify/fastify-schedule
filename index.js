@@ -13,11 +13,7 @@ function plugin(fastify, opts, next) {
   next();
 }
 
-const fastifySchedulePlugin = fp(plugin, {
+module.exports = fp(plugin, {
   fastify: "4.x",
   name: "@fastify/schedule",
 });
-
-module.exports = {
-  fastifySchedulePlugin,
-};
