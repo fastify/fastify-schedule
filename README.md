@@ -1,7 +1,8 @@
 # @fastify/schedule
 
 ![CI](https://github.com/fastify/fastify-schedule/workflows/CI/badge.svg)
-[![NPM Version][npm-image]][npm-url]
+[![NPM version](https://img.shields.io/npm/v/@fastify/schedule.svg?style=flat)](https://www.npmjs.com/package/@fastify/schedule)
+[![NPM downloads](https://img.shields.io/npm/dm/@fastify/schedule.svg?style=flat)](https://www.npmjs.com/package/@fastify/schedule)
 [![Coverage Status](https://coveralls.io/repos/fastify/fastify-schedule/badge.svg?branch=main)](https://coveralls.io/r/fastify/fastify-schedule?branch=main)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
 
@@ -40,6 +41,3 @@ fastify.ready().then(() => {
 ```
 
 For more detailed instructions, see the [documentation](https://github.com/kibertoad/toad-scheduler) of `toad-scheduler`.
-
-[npm-image]: https://img.shields.io/npm/v/@fastify/schedule.svg
-[npm-url]: https://npmjs.org/package/@fastify/schedule
