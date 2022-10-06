@@ -7,7 +7,7 @@ declare module "fastify" {
   }
 }
 
-declare const fastifySchedule: FastifyPluginCallback;
+declare const fastifySchedulePlugin: FastifyPluginCallback;
 
-export default fastifySchedule;
-export { fastifySchedule };
+export default fastifySchedulePlugin;
+export { fastifySchedulePlugin };
