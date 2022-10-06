@@ -1,3 +1,5 @@
+"use strict";
+
 const { ToadScheduler } = require("toad-scheduler");
 const fp = require("fastify-plugin");
 
