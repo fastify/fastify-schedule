@@ -15,7 +15,7 @@
     "test": "npm run test:unit && npm run test:typescript",
     "test:unit": "tap",
     "test:typescript": "tsd",
-    "lint": "eslint \"lib/**/*.js\" \"test/**/*.js\" index.js",
+    "lint": "eslint \"test/**/*.js\" index.js",
     "lint:everything": "npm run lint && npm run test:typescript",
     "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts",
     "postinstall": "husky install",
