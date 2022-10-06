@@ -15,9 +15,8 @@
     "test": "npm run test:unit && npm run test:typescript",
     "test:unit": "tap",
     "test:typescript": "tsd",
-    "lint": "eslint \"test/**/*.js\" index.js",
-    "lint:everything": "npm run lint && npm run test:typescript",
-    "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts"
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "dependencies": {
     "@fastify/pre-commit": "^2.0.2",
@@ -30,11 +29,9 @@
   "devDependencies": {
     "@sinonjs/fake-timers": "^9.1.2",
     "@types/node": "^18.0.0",
-    "eslint": "^8.0.0",
-    "eslint-config-prettier": "^8.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "fastify": "^4.0.0-rc.3",
     "prettier": "^2.2.1",
+    "standard": "^17.0.0",
     "tap": "^16.3.0",
     "toad-scheduler": "^1.0.2",
     "tsd": "^0.24.1"
