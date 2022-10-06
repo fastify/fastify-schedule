@@ -10,7 +10,7 @@
     }
   ],
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "test": "npm run test:unit && npm run test:typescript",
     "test:unit": "tap",
@@ -57,7 +57,7 @@
     "LICENSE",
     "lib/*",
     "index.js",
-    "index.d.ts"
+    "types/index.d.ts"
   ],
   "publishConfig": {
     "access": "public"
