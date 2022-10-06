@@ -15,9 +15,8 @@
     "test": "jest --config=jest.config.json",
     "test:coverage": "jest --config=jest.config.json --coverage",
     "test:typescript": "tsd",
-    "lint": "eslint \"lib/**/*.js\" \"test/**/*.js\" index.js",
-    "lint:everything": "npm run lint && npm run test:typescript",
-    "prettier": "prettier --write \"{lib,test}/**/*.js\" index.js index.d.ts",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
     "postpublish": "pinst --enable"
@@ -32,14 +31,12 @@
   "devDependencies": {
     "@types/jest": "^29.0.0",
     "@types/node": "^18.0.0",
-    "eslint": "^8.0.0",
-    "eslint-config-prettier": "^8.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "fastify": "^4.0.0-rc.3",
     "husky": "^8.0.0",
     "jest": "^29.0.1",
     "pinst": "^3.0.0",
     "prettier": "^2.2.1",
+    "standard": "^17.0.0",
     "toad-scheduler": "^1.0.2",
     "tsd": "^0.24.1"
   },
