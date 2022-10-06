@@ -15,7 +15,14 @@ function plugin(fastify, opts, next) {
   next();
 }
 
-module.exports = fp(plugin, {
+const fastifySchedulePlugin = fp(plugin, {
   fastify: "4.x",
   name: "@fastify/schedule",
 });
+
+module.exports = fastifySchedulePlugin;
+
+/**
+ * TODO: Should be removed in the next major release
+ */
+module.exports.fastifySchedulePlugin = fastifySchedulePlugin;
