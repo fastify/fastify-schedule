@@ -1,6 +1,6 @@
 {
   "name": "@fastify/schedule",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Fastify plugin for scheduling periodic jobs",
   "license": "MIT",
   "maintainers": [
