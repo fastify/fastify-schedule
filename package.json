@@ -1,6 +1,6 @@
 {
   "name": "@fastify/schedule",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "Fastify plugin for scheduling periodic jobs",
   "license": "MIT",
   "maintainers": [
@@ -22,18 +22,18 @@
     "fastify-plugin": "^4.0.0"
   },
   "peerDependencies": {
-    "fastify": "^4.0.0-rc.3",
-    "toad-scheduler": "^1.0.2"
+    "fastify": "^4.0.0",
+    "toad-scheduler": "^2.0.0"
   },
   "devDependencies": {
     "@fastify/pre-commit": "^2.0.2",
     "@sinonjs/fake-timers": "^9.1.2",
-    "@types/node": "^18.0.0",
-    "fastify": "^4.0.0-rc.3",
-    "prettier": "^2.2.1",
+    "@types/node": "^18.8.5",
+    "fastify": "^4.8.1",
+    "prettier": "^2.7.1",
     "standard": "^17.0.0",
     "tap": "^16.3.0",
-    "toad-scheduler": "^1.0.2",
+    "toad-scheduler": "^2.0.0",
     "tsd": "^0.24.1"
   },
   "homepage": "http://github.com/fastify/fastify-schedule",
