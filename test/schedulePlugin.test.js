@@ -1,3 +1,5 @@
+'use strict'
+
 const fastify = require('fastify')
 const fastifySchedulePlugin = require('../index')
 const FakeTimers = require('@sinonjs/fake-timers')
