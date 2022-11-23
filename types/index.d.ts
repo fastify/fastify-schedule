@@ -7,7 +7,12 @@ declare module "fastify" {
   }
 }
 
-declare const fastifySchedule: FastifyPluginCallback;
+type FastifySchedule = FastifyPluginCallback;
 
-export default fastifySchedule;
-export { fastifySchedule };
+declare namespace fastifySchedule {
+  export const fastifySchedule: FastifySchedule
+  export { fastifySchedule as default }
+}
+
+declare function fastifySchedule(...params: Parameters<FastifySchedule>): ReturnType<FastifySchedule>
+export = fastifySchedule
