@@ -28,7 +28,7 @@
   "devDependencies": {
     "@fastify/pre-commit": "^2.0.2",
     "@sinonjs/fake-timers": "^10.0.0",
-    "@types/node": "^18.8.5",
+    "@types/node": "^20.1.0",
     "fastify": "^4.8.1",
     "prettier": "^2.7.1",
     "standard": "^17.0.0",
