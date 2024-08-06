@@ -16,7 +16,7 @@ function plugin (fastify, opts, next) {
 }
 
 const fastifySchedulePlugin = fp(plugin, {
-  fastify: '4.x',
+  fastify: '5.x',
   name: '@fastify/schedule'
 })
 
