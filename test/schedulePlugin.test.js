@@ -2,16 +2,12 @@
 
 const fastify = require('fastify')
 const fastifySchedulePlugin = require('../index')
-const FakeTimers = require('@sinonjs/fake-timers')
-const test = require('tap').test
+const { test, mock } = require('node:test')
 const { SimpleIntervalJob, Task } = require('toad-scheduler')
 
 test('schedulePlugin correctly stops on application close', async (t) => {
-  const clock = FakeTimers.install()
-
-  t.teardown(() => {
-    clock.uninstall()
-  })
+  const clock = mock.timers
+  clock.enable(0)
 
   const app = fastify({ logger: true })
   app.register(fastifySchedulePlugin)
@@ -30,12 +26,12 @@ test('schedulePlugin correctly stops on application close', async (t) => {
 
   app.scheduler.addSimpleIntervalJob(job)
 
-  t.equal(counter, 0)
+  t.assert.equal(counter, 0)
   clock.tick(20)
-  t.equal(counter, 2)
+  t.assert.equal(counter, 2)
 
   await app.close()
   clock.tick(20)
 
-  t.equal(counter, 2)
+  t.assert.equal(counter, 2)
 })
