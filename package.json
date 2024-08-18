@@ -14,7 +14,7 @@
   "types": "types/index.d.ts",
   "scripts": {
     "test": "npm run test:unit && npm run test:typescript",
-    "test:unit": "c8 node --test",
+    "test:unit": "c8 --100 node --test",
     "test:typescript": "tsd",
     "lint": "standard",
     "lint:fix": "standard --fix"
