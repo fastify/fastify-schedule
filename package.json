@@ -23,14 +23,14 @@
     "fastify-plugin": "^4.5.1"
   },
   "peerDependencies": {
-    "fastify": "^4.0.0",
+    "fastify": "^5.0.0",
     "toad-scheduler": ">= 2.0.0 < 4"
   },
   "devDependencies": {
     "@fastify/pre-commit": "^2.1.0",
     "@types/node": "^22.0.0",
     "c8": "^10.1.2",
-    "fastify": "^5.0.0-alpha.4",
+    "fastify": "^5.0.0",
     "prettier": "^3.2.5",
     "standard": "^17.1.0",
     "toad-scheduler": "^3.0.1",
