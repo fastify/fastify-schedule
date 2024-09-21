@@ -20,8 +20,10 @@
     "lint:fix": "standard --fix"
   },
   "dependencies": {
-    "fastify-plugin": "^5.0.0",
-    "toad-scheduler": ">=2.0.0 <4"
+    "fastify-plugin": "^5.0.0"
+  },
+  "peerDependencies": {
+    "toad-scheduler": ">=2.0.0"
   },
   "devDependencies": {
     "@fastify/pre-commit": "^2.1.0",
