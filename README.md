@@ -5,7 +5,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/@fastify/schedule.svg?style=flat)](https://www.npmjs.com/package/@fastify/schedule)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
 
-Fastify plugin for scheduling periodic jobs. Provides an instance of [toad-scheduler](https://github.com/kibertoad/toad-scheduler) on fastify instance.  
+Fastify plugin for scheduling periodic jobs. Provides an instance of [toad-scheduler](https://github.com/kibertoad/toad-scheduler) on fastify instance.
 Jobs are stopped automatically when the fastify instance is stopped.
 
 ## Getting started
