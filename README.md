@@ -3,7 +3,7 @@
 [![CI](https://github.com/fastify/fastify-schedule/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/fastify/fastify-schedule/actions/workflows/ci.yml)
 [![NPM version](https://img.shields.io/npm/v/@fastify/schedule.svg?style=flat)](https://www.npmjs.com/package/@fastify/schedule)
 [![NPM downloads](https://img.shields.io/npm/dm/@fastify/schedule.svg?style=flat)](https://www.npmjs.com/package/@fastify/schedule)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://standardjs.com/)
+[![neostandard javascript style](https://img.shields.io/badge/code_style-neostandard-brightgreen?style=flat)](https://github.com/neostandard/neostandard)
 
 Fastify plugin for scheduling periodic jobs. Provides an instance of [toad-scheduler](https://github.com/kibertoad/toad-scheduler) on fastify instance.
 Jobs are stopped automatically when the fastify instance is stopped.

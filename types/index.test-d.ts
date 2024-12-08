@@ -1,26 +1,26 @@
-import { FastifyInstance, FastifyPluginCallback } from "fastify";
-import fastify from "fastify";
-import { expectType } from "tsd";
+import { FastifyInstance, FastifyPluginCallback } from 'fastify'
+import fastify from 'fastify'
+import { expectType } from 'tsd'
 
-import { fastifySchedule as fastifyScheduleNamed } from "..";
-import fastifyScheduleDefault from "..";
-import * as fastifyScheduleStar from "..";
-import fastifyScheduleCjsImport = require("..");
-const fastifyScheduleCjs = require("./");
+import { fastifySchedule as fastifyScheduleNamed } from '..'
+import fastifyScheduleDefault from '..'
+import * as fastifyScheduleStar from '..'
+import fastifyScheduleCjsImport = require('..')
+const fastifyScheduleCjs = require('./')
 
-const app: FastifyInstance = fastify();
-app.register(fastifyScheduleNamed);
-app.register(fastifyScheduleDefault);
-app.register(fastifyScheduleCjs);
-app.register(fastifyScheduleCjsImport.default);
-app.register(fastifyScheduleCjsImport.fastifySchedule);
-app.register(fastifyScheduleStar.default);
-app.register(fastifyScheduleStar.fastifySchedule);
+const app: FastifyInstance = fastify()
+app.register(fastifyScheduleNamed)
+app.register(fastifyScheduleDefault)
+app.register(fastifyScheduleCjs)
+app.register(fastifyScheduleCjsImport.default)
+app.register(fastifyScheduleCjsImport.fastifySchedule)
+app.register(fastifyScheduleStar.default)
+app.register(fastifyScheduleStar.fastifySchedule)
 
-expectType<FastifyPluginCallback>(fastifyScheduleNamed);
-expectType<FastifyPluginCallback>(fastifyScheduleDefault);
-expectType<FastifyPluginCallback>(fastifyScheduleCjsImport.default);
-expectType<FastifyPluginCallback>(fastifyScheduleCjsImport.fastifySchedule);
-expectType<FastifyPluginCallback>(fastifyScheduleStar.default);
-expectType<FastifyPluginCallback>(fastifyScheduleStar.fastifySchedule);
-expectType<any>(fastifyScheduleCjs);
+expectType<FastifyPluginCallback>(fastifyScheduleNamed)
+expectType<FastifyPluginCallback>(fastifyScheduleDefault)
+expectType<FastifyPluginCallback>(fastifyScheduleCjsImport.default)
+expectType<FastifyPluginCallback>(fastifyScheduleCjsImport.fastifySchedule)
+expectType<FastifyPluginCallback>(fastifyScheduleStar.default)
+expectType<FastifyPluginCallback>(fastifyScheduleStar.fastifySchedule)
+expectType<any>(fastifyScheduleCjs)
