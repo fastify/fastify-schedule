@@ -13,11 +13,11 @@
   "type": "commonjs",
   "types": "types/index.d.ts",
   "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "test": "npm run test:unit && npm run test:typescript",
     "test:unit": "c8 --100 node --test",
-    "test:typescript": "tsd",
-    "lint": "standard",
-    "lint:fix": "standard --fix"
+    "test:typescript": "tsd"
   },
   "dependencies": {
     "fastify-plugin": "^5.0.0"
@@ -30,8 +30,8 @@
     "@types/node": "^22.0.0",
     "c8": "^10.1.2",
     "fastify": "^5.0.0",
+    "neostandard": "^0.11.9",
     "prettier": "^3.2.5",
-    "standard": "^17.1.0",
     "toad-scheduler": "^3.0.1",
     "tsd": "^0.31.1"
   },
