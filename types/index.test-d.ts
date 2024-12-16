@@ -1,9 +1,7 @@
-import { FastifyInstance, FastifyPluginCallback } from 'fastify'
-import fastify from 'fastify'
+import fastify, { FastifyInstance, FastifyPluginCallback } from 'fastify'
 import { expectType } from 'tsd'
 
-import { fastifySchedule as fastifyScheduleNamed } from '..'
-import fastifyScheduleDefault from '..'
+import fastifyScheduleDefault, { fastifySchedule as fastifyScheduleNamed } from '..'
 import * as fastifyScheduleStar from '..'
 import fastifyScheduleCjsImport = require('..')
 const fastifyScheduleCjs = require('./')
