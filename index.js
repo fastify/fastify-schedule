@@ -3,11 +3,11 @@
 const { ToadScheduler } = require('toad-scheduler')
 const fp = require('fastify-plugin')
 
-function plugin (fastify, opts, next) {
+function plugin (fastify, _opts, next) {
   const scheduler = new ToadScheduler()
   fastify.decorate('scheduler', scheduler)
 
-  fastify.addHook('onClose', (fastify, done) => {
+  fastify.addHook('onClose', (_fastify, done) => {
     scheduler.stop()
     done()
   })
