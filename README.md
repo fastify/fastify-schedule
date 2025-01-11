@@ -20,7 +20,7 @@ Next, set up the plugin:
 
 ```js
 const fastify = require('fastify')();
-const { fastifySchedulePlugin } = require('@fastify/schedule');
+const { fastifySchedule } = require('@fastify/schedule');
 const { SimpleIntervalJob, AsyncTask } = require('toad-scheduler');
 
 const task = new AsyncTask(

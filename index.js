@@ -23,8 +23,3 @@ const fastifySchedulePlugin = fp(plugin, {
 module.exports = fastifySchedulePlugin
 module.exports.default = fastifySchedulePlugin
 module.exports.fastifySchedule = fastifySchedulePlugin
-
-/**
- * TODO: Should be removed in the next major release
- */
-module.exports.fastifySchedulePlugin = fastifySchedulePlugin
