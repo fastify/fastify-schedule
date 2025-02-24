@@ -30,11 +30,11 @@ const task = new AsyncTask(
 )
 const job = new SimpleIntervalJob({ seconds: 20, }, task)
 
-fastify.register(fastifySchedulePlugin);
+fastify.register(fastifySchedule);
 
 // `fastify.scheduler` becomes available after initialization.
-// Therefore, you need to call `ready` method.
-fastify.ready().then(() => {
+// Therefore, you need to call `after` method.
+fastify.after().then(() => {
     fastify.scheduler.addSimpleIntervalJob(job)
 })
 ```
