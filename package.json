@@ -47,7 +47,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/fastify/fastify-schedule.git"
+    "url": "git+https://github.com/fastify/fastify-schedule.git"
   },
   "bugs": {
     "url": "https://github.com/fastify/fastify-schedule/issues"
