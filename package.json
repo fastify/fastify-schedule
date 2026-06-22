@@ -34,7 +34,7 @@
     "toad-scheduler": "^4.0.1",
     "tstyche": "^7.0.0"
   },
-  "homepage": "http://github.com/fastify/fastify-schedule",
+  "homepage": "https://github.com/fastify/fastify-schedule",
   "funding": [
     {
       "type": "github",
