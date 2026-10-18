@@ -60,13 +60,6 @@
     "job",
     "task"
   ],
-  "files": [
-    "README.md",
-    "LICENSE",
-    "lib/*",
-    "index.js",
-    "types/index.d.ts"
-  ],
   "publishConfig": {
     "access": "public"
   }
